@@ -8,7 +8,7 @@ namespace ReadWrite
     {
         private static void Main(string[] args)
         {
-            var extension = args[0].Split('.').Last();
+            var extension = "." + args[0].Split('.').Last();
 
             using (var rs = File.OpenRead(args[0]))
             {
